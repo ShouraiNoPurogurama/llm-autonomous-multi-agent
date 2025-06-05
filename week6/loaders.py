@@ -4,6 +4,9 @@ from datasets import load_dataset
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from items import Item
 
+import os
+os.environ["HF_HOME"] = "F:/VirtualEnv/huggingface"
+
 CHUNK_SIZE = 1000
 MIN_PRICE = 0.5
 MAX_PRICE = 999.49
